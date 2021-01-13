@@ -1,0 +1,72 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Typ-Selektor */
+p{
+    color: cornflowerblue;
+}
+
+/* Klassen-Selektor */
+.demo-class{
+    font-style: italic;
+    color: green;
+}
+
+/* ID-Selektor */
+#demo-id{
+    font-weight: bold;
+}
+
+#demo-id-2{
+    color: red;
+}
+
+
+/* Links stylen */
+
+/* LoVe-HAte */
+/* Eselsbrücke: link - visited - hover - active */
+
+a:link{
+    color: cyan;
+}
+
+a:visited{
+    color: gold;
+}
+
+a:hover{
+    color: chartreuse;
+}
+
+a:active{
+    color: crimson;
+}
+
+a{
+    text-decoration: none;
+}
+
+.demo-div{
+    height: 150px;
+    background-color: cyan;
+}
+
+.demo-div-2{
+    width: 600px;
+    /* height: 100px; */
+    /* text-align: center; */
+   /*  
+    border-width: 2px;
+    border-style: solid;
+    border-color: darkblue;
+ */
+    border: 2px solid darkblue;
+}
+
+
+
+

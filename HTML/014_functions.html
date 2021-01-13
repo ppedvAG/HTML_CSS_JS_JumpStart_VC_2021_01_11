@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+    <style>
+
+        :root{
+            font-size: 20px;
+        }
+
+        body{
+            /* background-color: orange; */
+        }
+
+        div{
+            min-height: 50px;
+            line-height: 50px;
+            border: 2px solid green;
+            padding: .5em 2em ;
+            margin-bottom: .5em;
+        }
+
+        .demo04{
+            /* background-color: palegreen; */
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <div id="demo01" class="demo01" onclick="setBgCol()"></div>
+    <div id="demo02" class="demo02"></div>
+    <div id="demo03" class="demo03"></div>
+    <div id="demo04" class="demo04"></div>
+    <div id="demo05" class="demo05"></div>
+    <input type="text" id="inp-demo">
+    <button id="btn-ok">OK</button>
+    
+
+    <script>
+
+        /*
+            häufige Events:
+
+                (on)click
+                mouseover
+                mouseout
+                change
+                input
+                keydown/keypress
+                keyup
+                focus
+                blur
+                scroll        
+        
+        */
+
+        var demo01 = document.getElementById('demo01');
+        var demo02 = document.getElementById('demo02');
+        var demo03 = document.getElementById('demo03');
+        var demo04 = document.getElementById('demo04');
+        var demo05 = document.getElementById('demo05');
+        var inpDemo = document.getElementById('inp-demo');
+        var btnOk = document.getElementById('btn-ok');
+
+
+
+        function setBgCol(){
+            // toller Code
+            demo01.style.backgroundColor = 'chartreuse';
+        }
+
+        /* setBgCol(); */
+
+        demo02.addEventListener('click', setBgCol);
+
+
+        // Eventlistener mit anonymer Funktion:
+/* 
+        demo03.addEventListener('click', function(){
+            // toller Code
+            demo03.style.backgroundColor = 'steelblue';
+        }); */
+
+        // bisschen kürzer:
+        demo03.addEventListener('click', function(){
+            // toller Code
+            this.style.backgroundColor = 'steelblue';
+        });
+
+
+        // Parameter übergeben:
+
+        function demoCalc(a, b){
+            return a * b;
+        }
+
+        console.log(demoCalc(3, 5));
+
+        demo04.addEventListener('mouseover', function(){
+            console.log(this.style.backgroundColor);
+        });
+
+        demo04.addEventListener('mouseout', function(){
+            this.style.backgroundColor = 'initial';
+        });
+
+        
+
+        btnOk.addEventListener('click', function(){
+            var inp = inpDemo.value;
+            demo05.innerHTML = '<p>' + 'Wert: ' + inp + '</p>';
+        });
+
+       /*  console.log(window.getComputedStyle(demo04).getPropertyValue("background-color")); */
+
+    </script>
+</body>
+</html>

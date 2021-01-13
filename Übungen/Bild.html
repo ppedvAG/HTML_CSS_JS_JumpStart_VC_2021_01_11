@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundstruktur</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .page-container {
+            background-color: rgb(168, 187, 206);
+            padding: 3rem;
+        }
+
+        .main-header {
+            background-color: steelblue;
+            color: white;
+            height: 100px;
+            /* nur zum Testen! */
+            padding: 2rem;
+            /* margin-bottom: 10px; */
+            /* nur zum Testen... */
+        }
+
+        .main-nav {
+            background-color: rgb(9, 83, 145);
+            color: white;
+            height: 80px;
+            /* nur zum Testen! */
+            padding: 2rem;
+        }
+
+        .main-content-container {
+            background-color: rgb(181, 209, 233);
+            /* height: 900px; */
+            /* nur zum Testen! */
+            padding: 2rem;
+            /* color: white; */
+        }
+
+        .demo-container {
+            background-color: steelblue;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        th,
+        td {
+            border: 1px solid white;
+            padding: .7rem 2rem;
+            /* min-width: 100px; */
+        }
+
+        th {
+            background-color: dodgerblue;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        td {
+            background-color: rgb(226, 240, 255);
+        }
+
+        tfoot {
+            font-size: 14px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+
+        tfoot td {
+            background-color: rgb(102, 174, 246);
+        }
+
+        .main-footer {
+            background-color: rgb(9, 83, 145);
+            color: white;
+            height: 100px;
+            /* nur zum Testen! */
+            padding: 2rem;
+        }
+
+        .img-box {
+            width: 30%;
+            margin: 0 auto;
+        }
+
+
+        .img-box>img {
+            width: 100%;
+            display: block;
+        }
+
+        .text-block-demo{
+            width: 70%;
+            margin: 0 auto;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="main-header">Companyname</header>
+        <nav class="main-nav">Navbar</nav>
+        <main class="main-content-container">
+            <div class="demo-container">
+
+                <table>
+                    <!-- Tabellenüberschrift: -->
+                    <caption>Obstlager</caption>
+                    <!-- caption-tag kommt direkt nach dem öffnenden table-tag -->
+                    <thead>
+                        <!-- Spaltenüberschriften -->
+                        <tr>
+                            <th>
+                                <!-- table header (Spaltenüberschrift) -->
+                                Obst
+                            </th>
+                            <th>
+                                Preis
+                            </th>
+                            <th>
+                                Anzahl
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Zeile 1 -->
+                        <tr>
+                            <!-- table row (Zeile) -->
+                            <td>Äpfel</td><!-- table data (so viele wie Spalten) -->
+                            <td>0.15</td>
+                            <td>200</td>
+                        </tr>
+                        <!-- Zeile 2 -->
+                        <tr>
+                            <!-- table row (Zeile) -->
+                            <td>Bananen</td>
+                            <td>0.25</td>
+                            <td>150</td>
+                        </tr>
+                        <!-- Zeile 3 -->
+                        <tr>
+                            <!-- table row (Zeile) -->
+                            <td>Kiwis</td>
+                            <td>0.45</td>
+                            <td>50</td>
+                        </tr>
+                        <!-- Zeile 4 -->
+                        <tr>
+                            <!-- table row (Zeile) -->
+                            <td>Mangos</td>
+                            <td>3.45</td>
+                            <td>60</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">&copy; Leos Tabelle</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div><!-- demo-container end -->
+
+            <div class="demo-container">
+                <div class="img-box">
+                    <img src="../images/lake2.jpg" alt="lake">
+                </div>
+            </div>
+
+            <section class="demo-container">
+
+                <div class="text-block-demo">
+                    <h2>Das ist eine tolle Überschrift</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus suscipit incidunt nobis
+                        delectus maxime, veniam et, cupiditate sapiente officia inventore, dolorem voluptates quasi
+                        natus doloremque! Aliquam quibusdam aliquid cupiditate quaerat velit suscipit illum veniam!
+                        Dolore quae numquam laudantium nisi culpa, quis iste vero dolorem, quaerat maiores aspernatur
+                        consequuntur recusandae perspiciatis?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laudantium sapiente voluptas
+                        iure cum explicabo minima earum temporibus ab porro.
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione rerum itaque fuga quo
+                        blanditiis commodi quas porro fugiat accusantium iusto, temporibus doloribus sequi, cupiditate
+                        sit eaque delectus inventore tenetur impedit.
+                    </p>
+                </div>
+
+            </section>
+
+
+
+        </main>
+        <footer class="main-footer">Footer</footer>
+    </div>
+</body>
+
+</html>

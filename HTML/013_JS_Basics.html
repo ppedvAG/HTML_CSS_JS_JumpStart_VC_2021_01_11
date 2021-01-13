@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+    <!-- 
+    <link rel="stylesheet" href="../Pfad_zum_CSS_File.css">
+    <script src="../JS/test.js" defer></script>
+    -->
+    <style>
+        .demo{
+            border: 2px solid navy;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="demo" class="demo"></div>
+
+
+    <script>
+        // einzeilige Kommentare
+        /*
+            mehrzeilige
+            Kommentare
+        */
+
+
+        /*
+            Kommentar
+            // verschachtelte Kommentare
+            Kommentar
+        */
+
+        
+
+        /* Variablen */
+
+        var a;
+
+        /* mehrere auf einmal deklarieren */
+
+        var text, firstName, z, x;
+
+
+        /* Initialisierung */
+
+        x = 5;
+
+        /* Deklaration und Initialisierung zusammenfassen */
+
+        var y = "5";
+
+        var b, c, d = 7;
+
+        /* Konstanten */
+        const MwSt = 0.19;
+
+
+        /* 
+            Datentypen:
+
+            number (Zahl)
+
+                5
+                -5
+                5.3 
+                5.12345678987654321
+                123e5 (Exponentialschreibweise) 12300000
+                123e-5 .... 0.00123
+            
+            string (Text)
+
+                'Text'
+                "Text"
+
+                'Das ist ein "String".'
+                "Das ist ein 'String'."
+
+            boolean
+                true/false
+
+            object
+
+            undefined (noch nicht definiert)
+
+        
+        */
+
+
+        /* 
+            Operatoren
+
+            +, -, *, /
+            ++, --  (increment, decrement)
+            +=, -=, *=, /=
+
+            % Modulus-Operator
+
+            // Vergleichsoperatoren
+
+                ==, !=, <=, >= 
+                ===, !==  überprüft auch den Datentyp
+
+            // logische Operatoren
+ 
+                &&          // logisches UND (AND)
+                ||          // logisches ODER (OR)
+                !           // logisches NICHT (NOT)
+        
+        */
+
+
+
+        console.log(x==y); // true
+
+        console.log(x===y); // false
+
+        console.log('Der aktuelle Wert von x ist: ' + x + '.');
+
+        console.log(typeof x);
+        
+        console.log(typeof y);
+
+        firstName = 'James';
+        var lastName = 'Bond';
+
+        var fullName = firstName + ' ' + lastName;
+
+        console.log(fullName);
+
+        console.log(x+y);
+
+        console.log(isNaN(x)); // false = d.h. x ist nicht not a number = x ist eine number
+
+
+        var demoDiv = document.getElementById('demo');
+
+        demoDiv.style.backgroundColor = 'rgb(255, 255, 0)';
+
+        demoDiv.innerHTML = 'Hallo, ' + fullName + '!';
+
+        
+        demoDiv.innerHTML += '<p>' + 'Hallo, ' + fullName + '!' + '</p>';
+
+        
+
+    </script>
+</body>
+
+</html>

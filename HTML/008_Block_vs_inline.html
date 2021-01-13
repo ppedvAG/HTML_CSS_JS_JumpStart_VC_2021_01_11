@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block- vs. Inline-Elemente</title>
+    <style>
+        .demo {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border: 2px solid darkblue;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        span {
+            color: gold;
+        }
+
+        .container {
+            background-color: rgb(255, 217, 0);
+        }
+
+        /* Achtung: NICHT machen! Nur zur Demo! Elemente nebeneinanderbringen mit den Methoden von 010 und 011.  */
+        .inline-demo {
+            background-color: rgb(54, 156, 54);
+            border: 2px solid rgb(8, 119, 8);
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+        }
+
+        .block-demo {
+            display: block;
+        }
+
+        .inline-block-demo{
+            width: 100px;
+            display: inline-block;
+            /* margin-top: 10px; */
+            /* background-color: aqua; */
+        }
+
+        .lbl-inp-container{
+            /* border: 2px solid green; */
+            background-color: rgb(154, 228, 154);
+            /* margin-bottom: 10px; */
+            padding-bottom: 10px;
+        }
+
+        
+        .container2 {
+            background-color: rgb(255, 217, 0);
+            /* border-top: 1px solid rgb(255, 217, 0); */
+            /* padding-top: 1px; */
+            height: 150px;
+            padding-top: 50px;
+            /* box-sizing: border-box; */
+        }
+
+        .demo02{
+            height: 100px;
+            background-color: cadetblue;
+            /* margin-top: 50px; */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Das ist eine Überschrift</h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi ea eum laboriosam ratione,
+        corrupti aliquam neque sit fuga doloremque.
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum laborum cupiditate error facere ea sunt eos,
+        dolore illum sed esse.
+    </p>
+
+
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+
+    <ol>
+        <li>Apfel</li>
+        <li>Banane</li>
+        <li>Kiwi</li>
+    </ol>
+    <ul>
+        <li>Apfel</li>
+        <li>Banane</li>
+        <li>Kiwi</li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Überschrift</th>
+                <th>Überschrift</th>
+                <th>Überschrift</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Testtext</td>
+                <td>Testtext</td>
+                <td>Testtext</td>
+            </tr>
+            <tr>
+                <td>Testtext</td>
+                <td>Testtext</td>
+                <td>Testtext</td>
+            </tr>
+            <tr>
+                <td>Testtext</td>
+                <td>Testtext</td>
+                <td>Testtext</td>
+            </tr>
+            <tr>
+                <td>Testtext</td>
+                <td>Testtext</td>
+                <td>Testtext</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Überschrift</th>
+                <th>Überschrift</th>
+                <th>Überschrift</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Testtext</td>
+                <td>Testtext</td>
+                <td>Testtext</td>
+            </tr>
+            <tr>
+                <td>Testtext</td>
+                <td>Testtext</td>
+                <td>Testtext</td>
+            </tr>
+            <tr>
+                <td>Testtext</td>
+                <td>Testtext</td>
+                <td>Testtext</td>
+            </tr>
+            <tr>
+                <td>Testtext</td>
+                <td>Testtext</td>
+                <td>Testtext</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <p>
+        Das ist ein <a href="https://en.wikipedia.org/wiki/Paragraph" target="_blank">Paragraph.</a>
+
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam vero enim quod delectus ratione id eius dolorem
+        illum debitis unde.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Nobis, illum.</span>
+    </p>
+
+    <label for="">Vorname:</label>
+    <input type="text">
+    <label for="">Nachname:</label>
+    <input type="text">
+
+    <img src="../images/toucan.jpg" alt="Toucan">
+    <img src="../images/bee-eater.jpg" alt="Bee-Eater">
+    <img src="../images/victoria-crowned-pigeon.jpg" alt="Pigeon">
+
+
+    <div class="container">
+        <div class="inline-demo"></div>
+        <div class="inline-demo"></div>
+        <div class="inline-demo"></div>
+        <div class="inline-demo"></div>
+        <div class="inline-demo"></div>
+    </div>
+
+    <h1>Block/Inline Demo mit Input-Feldern</h1>
+
+    <label for="" class="block-demo">Vorname:</label>
+    <input type="text" class="block-demo">
+    <label for="" class="block-demo">Nachname:</label>
+    <input type="text" class="block-demo">
+
+
+    <div class="lbl-inp-container">
+        <label for="" class="inline-block-demo">Vorname:</label>
+        <input type="text">
+    </div>
+    <div class="lbl-inp-container">
+        <label for="" class="inline-block-demo">Nachname:</label>
+        <input type="text">
+    </div>
+
+    <div class="container2">
+        <div class="demo02"></div>
+    </div>
+
+</body>
+
+</html>

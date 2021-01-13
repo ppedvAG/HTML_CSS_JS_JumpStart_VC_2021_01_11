@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objekte</title>
+</head>
+<body>
+    <div id="demo"></div>
+
+    <script>
+        var Person = {
+            firstName: "James",
+            lastName: "Bond",
+            id: "007",
+            age: 40,
+            fullName: function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        /* console.log(Person.firstName); */
+
+        var demoDiv = document.getElementById('demo');
+
+        demoDiv.innerHTML = Person.firstName;
+        /* Dot-Notation */
+        demoDiv.innerHTML += "<br>" + Person.lastName;
+        /* Bracket-Notation */
+        demoDiv.innerHTML += "<br>" + Person['lastName'];
+
+        demoDiv.innerHTML += "<br>" + Person.fullName();
+
+/* 
+        function Person(firstName, lastName){
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        var Leo = new Person('Leonard', 'Hlavin');
+
+ */
+        
+    </script>
+</body>
+</html>

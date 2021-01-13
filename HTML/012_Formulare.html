@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+    <style>
+        .lbl-inp-container {
+            margin-bottom: 10px;
+        }
+
+        .lbl-demo {
+            display: inline-block;
+            width: 100px;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="POST">
+
+        <div class="lbl-inp-container">
+            <label for="first-name" class="lbl-demo">Vorname:</label>
+            <input type="text" id="first-name" class="inp-demo" name="first-name" placeholder="Max">
+        </div>
+        <div class="lbl-inp-container">
+            <label for="last-name" class="lbl-demo">Nachname:</label>
+            <input type="text" id="last-name" class="inp-demo" name="last-name" placeholder="Mustermann" required>
+        </div>
+        <div class="lbl-inp-container">
+            <label for="pw" class="lbl-demo">Passwort:</label>
+            <input type="password" id="pw" class="inp-demo" name="pw" pattern="\d{3,5}"
+                title="Ihr Passwort muss aus mindestens 3 und maximal 5 Ziffern bestehen.">
+        </div>
+
+        <div class="lbl-inp-container">
+            <label for="num" class="lbl-demo">Zahl:</label>
+            <input type="number" id="num" class="inp-demo" name="num" min="0" max="100" step="1">
+        </div>
+        <!-- 
+        <div class="lbl-inp-container">
+            <label for="homepage" class="lbl-demo">Homepage:</label>
+            <input type="url" id="homepage" class="inp-demo" name="homepage" title="Bitte geben Sie https://... ein."
+                placeholder="https://muster.de" value="https://">
+        </div>
+ -->
+        <div class="lbl-inp-container">
+            <label for="email" class="lbl-demo">Email:</label>
+            <input type="email" id="email" class="inp-demo" name="email">
+        </div>
+
+
+        <div class="lbl-inp-container">
+            <label for="range" class="lbl-demo">Range:</label>
+            <input type="range" id="range" class="inp-demo" name="range" min="0" max="100" value="50" step="1">
+        </div>
+
+
+        <div class="lbl-inp-container">
+            <label for="color" class="lbl-demo">Farbe:</label>
+            <input type="color" id="color" class="inp-demo" name="color">
+        </div>
+
+
+        <div class="lbl-inp-container">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Bitte geben Sie hier Ihren Text ein..."></textarea>
+        </div>
+
+        <fieldset>
+            <legend>Pizzas</legend>
+            <div class="lbl-inp-container">
+                <input type="radio" name="pizzas" checked>
+                <label for="">Margherita</label>
+            </div>
+            <div class="lbl-inp-container">
+                <input type="radio" name="pizzas">
+                <label for="">Tonno</label>
+            </div>
+            <div class="lbl-inp-container">
+                <input type="radio" name="pizzas">
+                <label for="">Della Casa</label>
+            </div>
+            <div class="lbl-inp-container">
+                <input type="radio" name="pizzas">
+                <label for="">Salami</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Extras</legend>
+            <div class="lbl-inp-container">
+                <input type="checkbox" name="extras">
+                <label for="">Mais</label>
+            </div>
+            <div class="lbl-inp-container">
+                <input type="checkbox" name="extras">
+                <label for="">Mozzarella</label>
+            </div>
+            <div class="lbl-inp-container">
+                <input type="checkbox" name="extras">
+                <label for="">Ei</label>
+            </div>
+            <div class="lbl-inp-container">
+                <input type="checkbox" name="extras">
+                <label for="">Pfefferoni</label>
+            </div>
+        </fieldset>
+
+        <div class="lbl-inp-container">
+            <select name="" id="">
+                <option value="Margherita">Margherita</option>
+                <option value="Della Casa">Della Casa</option>
+                <option value="Tonno">Tonno</option>
+                <option value="Salami">Salami</option>
+                <option value="Diavolo">Diavolo</option>
+            </select>
+        </div>
+
+        <div class="lbl-inp-container">
+            <input type="text" list="pizzas" autocomplete="on"
+                placeholder="Bitte auswählen...">
+        </div>
+
+        <datalist id="pizzas">
+            <option value="Margherita" label="vegetarisch">Margherita</option>
+            <option value="Della Casa" label="vegetarisch">Della Casa</option>
+            <option value="Tonno" label="Fisch">Tonno</option>
+            <option value="Salami" label="Fleisch">Salami</option>
+            <option value="Diavolo" label="Fleisch">Diavolo</option>
+        </datalist>
+
+        <div class="lbl-inp-container">
+            <input type="submit" value="Abschicken">
+            <!-- <input type="reset"> -->
+        </div>
+
+
+    </form>
+
+    <!-- <button>OK</button> -->
+
+</body>
+
+</html>

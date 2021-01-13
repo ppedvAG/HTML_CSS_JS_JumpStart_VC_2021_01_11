@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        .page-container{
+            background-color: rgb(168, 187, 206);
+            padding: 3rem;
+        }
+
+        .main-header{
+            background-color: steelblue;
+            color: white;
+            height: 100px; /* nur zum Testen! */
+            padding: 2rem;
+            /* margin-bottom: 10px; */ /* nur zum Testen... */
+        }
+
+        .main-nav{
+            background-color: rgb(9, 83, 145);
+            color: white;
+            height: 80px;/* nur zum Testen! */
+            padding: 2rem;
+        }
+
+        .main-content-container{
+            background-color: rgb(181, 209, 233);
+            height: 900px;/* nur zum Testen! */
+            padding: 2rem;
+            color: white;
+        }
+
+        .demo-container,
+        .float-demo-container,
+        .flex-demo-container {
+            background-color: steelblue;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .slider-container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            justify-content: space-around;
+            margin-top: .5rem;
+        }
+
+        .output{
+            padding: 0.5rem 1rem;
+            width: 4rem;
+            border: 2px solid rgb(9, 83, 145);
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #nowDiv{
+            /* width: 100%;
+            box-sizing: border-box; */
+        }
+
+        .main-footer{
+            background-color: rgb(9, 83, 145);
+            color: white;
+            height: 100px;/* nur zum Testen! */
+            padding: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="main-header">Companyname</header>
+        <nav class="main-nav">Navbar</nav>
+        <main class="main-content-container">
+            
+            <div class="demo-container">
+                <label for="slider">Range:</label>
+                <div class="slider-container">
+                    <div id="minDiv" class="output"></div>
+                    <input type="range" id="slider" min="0" max="100" value="50" step="1">
+                    <div id="maxDiv" class="output"></div>
+                    <div id="nowDiv" class="output"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="main-footer">Footer</footer>
+
+        <script>
+
+            var minDiv = document.getElementById('minDiv');
+            var maxDiv = document.getElementById('maxDiv');
+            var nowDiv = document.getElementById('nowDiv');
+            var slider = document.getElementById('slider');
+
+            minDiv.innerHTML = slider.getAttribute('min');
+            maxDiv.innerHTML = slider.getAttribute('max');
+            nowDiv.innerHTML = slider.getAttribute('value');
+
+            slider.addEventListener('input', function(){
+                nowDiv.innerHTML = slider.value;
+            });
+
+
+        </script>
+    </div>
+</body>
+</html>

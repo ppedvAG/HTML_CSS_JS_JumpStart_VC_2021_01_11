@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Größenangaben</title>
+    <style>
+        :root{
+            font-size: 20px;
+        }
+
+        body{
+            margin: 0;
+            padding-bottom: 200px; /* nur für diese Demo! */
+        }
+
+        div{
+            height: 150px;
+        }
+
+        .demo-px{
+            background-color: navy;
+            width: 200px;
+        }
+
+        .demo-em{
+            background-color: rgb(71, 71, 187);
+            width: 10em;
+            font-size: 40px;
+        }
+
+        .demo-rem{
+            background-color: rgb(140, 140, 224);
+            width: 10rem;
+            /* font-size: 40px; */
+        }
+        .demo-percent{
+            background-color: rgb(196, 196, 250);
+            /* width: 100%; */
+           /*  height: 100%; */
+        }
+        .demo-vw{
+            background-color: rgb(94, 94, 165);
+            width: 80vw; /* viewport width */
+            font-size: 8vw;
+            height: initial;
+        }
+        .demo-vh{
+            background-color: rgb(48, 48, 126);
+            /* width: 80vh; *//* viewport height - macht kaum Sinn für Breite! */
+            height: 100vh;
+        }
+
+        .container{
+            height: 300px;
+            width: 300px;
+            border: 2px solid cyan;
+        }
+
+        .inner{
+            width: 100%;
+            height: 50%;
+            background-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="demo-px">Das ist ein Div - px</div>
+    <div class="demo-em">Das ist ein Div - em</div>
+    <div class="demo-rem">Das ist ein Div - rem</div>
+    <div class="demo-percent">Das ist ein Div - percent</div>
+    <div class="demo-vw">Das ist ein Div - vw</div>
+    <div class="demo-vh">Das ist ein Div - vh</div>
+
+    <div class="container">
+        <div class="inner"></div>
+    </div>
+    
+</body>
+</html>

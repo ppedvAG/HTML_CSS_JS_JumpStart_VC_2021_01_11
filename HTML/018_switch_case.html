@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if-else</title>
+    <style>
+        div {
+            border: 2px solid black;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="demo01"></div>
+    <div id="demo02"></div>
+    <div id="demo03"></div>
+    <div id="demo04"></div>
+    <button id="btn-ok" onclick="changeBgColor();">OK</button>
+
+    <select name="pizzas" id="pizzas">
+        <!-- <option value="">Bitte auswählen...</option> -->
+        <option value="Margherita">Margherita</option>
+        <option value="Tonno">Tonno</option>
+        <option value="Della Casa">Della Casa</option>
+    </select>
+
+
+
+
+    <script>
+
+
+function changeBgColor(){
+
+    var inp = document.getElementById('pizzas');
+
+        switch (inp.value) {
+            case 'Margherita':
+                document.getElementById('demo01').style.backgroundColor = "rgb(255, 0, 0)";
+                break;
+            case 'Tonno':
+                document.getElementById('demo01').style.backgroundColor = "rgb(0, 255, 0)";
+                break;
+            case 'Della Casa':
+                document.getElementById('demo01').style.backgroundColor = "rgb(0, 0, 255)";
+                break;
+            default:
+                document.getElementById('demo01').innerHTML = "FAAAALSCH!";
+                break;
+
+        }
+
+}
+    </script>
+
+</body>
+
+</html>

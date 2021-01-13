@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .header{
+            height: 200px;
+            background-color: steelblue;
+        }
+
+        .main-nav{
+            height: 90px;
+            background-color: rgb(5, 54, 93);
+            position: sticky;
+            top: 0;
+        }
+
+        .container{
+            width: 70%;
+            background-color: cornsilk;
+            margin: 0 auto;
+            /* position: relative; */
+        }
+
+        .container>div{
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .position-static{
+            background-color: cyan;
+            position: static;/* default */
+            top: 100px;/* wird bei position: static ignoriert */
+        }
+        
+        .position-relative{
+            background-color: green;
+            position: relative;
+            top: 200px;
+            left: 200px;
+        }
+        
+        .position-absolute{
+            background-color: firebrick;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        
+        .position-fixed{
+            background-color: gold;
+            position: fixed;
+            top: 300px;
+            left: 300px;
+        }
+        
+        .position-sticky{
+            background-color: purple;
+            position: sticky;
+            top: 400px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    <nav class="main-nav"></nav>
+
+    <div class="container">
+        <div class="position-static">Das ist ein Div mit position: static.</div>
+        <div class="position-relative">Das ist ein Div mit position: relative.</div>
+        <div class="position-absolute">Das ist ein Div mit position: absolute.</div>
+        <div class="position-fixed">Das ist ein Div mit position: fixed.</div>
+        <div class="position-sticky">Das ist ein Div mit position: sticky.</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum libero quisquam, vel repellat odit nisi hic tempore
+        dolorem laudantium sint deleniti nobis voluptate ad in. Dicta quis obcaecati cum praesentium! Eligendi
+        consequuntur labore nulla deleniti esse ipsum modi iusto error incidunt, harum aperiam iure placeat, quod in
+        veniam tenetur corporis. Iure esse quos distinctio quae quas corrupti dicta fugiat reiciendis dolor est
+        provident architecto facilis incidunt, repellat placeat neque, sequi sapiente tempore exercitationem nulla,
+        eveniet assumenda. Neque numquam laborum beatae nisi eius quis totam adipisci id eaque animi tempore, fugiat
+        unde vitae a quae eligendi quia! Voluptatum nam nostrum ducimus cum beatae commodi deleniti ipsum in reiciendis
+        asperiores ratione nisi repudiandae ut atque velit, impedit ullam laudantium. Fugiat qui earum quaerat
+        laudantium rerum fugit voluptates natus illo aspernatur, accusantium magnam rem accusamus nulla totam quos
+        sequi. Eos, nostrum beatae ipsam aspernatur culpa nemo ipsum ratione. Atque aliquid, nobis, pariatur ex
+        quibusdam quae minus iure quaerat saepe maxime incidunt illo temporibus voluptatem voluptates eius omnis facere
+        quasi necessitatibus ipsa, rem doloribus nostrum odit! Temporibus rem quidem est iusto nostrum tempore
+        blanditiis a quis modi, provident ex assumenda harum vero laboriosam cumque tenetur impedit dolorum officia cum
+        corporis praesentium natus corrupti hic? Debitis, expedita! Molestiae eaque quae, reiciendis dignissimos
+        doloremque placeat corrupti laborum animi libero aliquam! Mollitia odit autem ipsum explicabo aut beatae
+        similique saepe accusantium vel quis error recusandae, blanditiis labore, natus sit, id eveniet cupiditate
+        corrupti! Ratione cupiditate, modi nam dolorem numquam reprehenderit esse velit quo incidunt. Asperiores iure
+        alias, optio quis dolor aut perferendis. Quo dolores natus iure tempora fugit possimus tempore eligendi optio,
+        assumenda animi sed obcaecati laboriosam omnis iusto consequatur qui porro? Hic reiciendis nemo non blanditiis
+        repellendus at consequuntur soluta veritatis reprehenderit nulla. Alias inventore magni iste a ipsum, iure
+        commodi corrupti ab obcaecati laborum animi voluptates molestias. Placeat ducimus vel reiciendis? Impedit quos
+        praesentium totam ab quidem ratione harum in. Quos ipsa asperiores numquam autem perferendis maxime eos labore
+        deserunt excepturi non, dolores dicta, voluptatibus molestias earum laboriosam ab consequuntur, optio quo.
+        Reiciendis obcaecati maiores nulla, ipsa illum delectus ad, impedit magni, sit numquam quo voluptatem. Repellat
+        officia, delectus aperiam veniam autem ullam animi fugit non, aut modi temporibus ad quae tempore aspernatur
+        reiciendis explicabo fuga nesciunt eveniet labore cum. Quaerat voluptatum debitis quibusdam qui, recusandae
+        accusantium nihil consequatur, tempora error perferendis maiores ea magnam unde optio provident quis soluta
+        sapiente. Tempora et assumenda a dolores incidunt maxime, minima neque tenetur totam, consequatur, eveniet
+        soluta eos. Aspernatur blanditiis laudantium itaque vel, nihil ut excepturi saepe consequatur assumenda dicta
+        corporis voluptate pariatur tempora facilis maiores fugiat illum rerum! Quasi, cum. Autem deserunt in magni
+        expedita, odio optio asperiores quis accusamus facilis tempora, delectus aut vero voluptatibus eum ea, sequi
+        porro! Maxime quasi laboriosam impedit illo dolorum! Asperiores mollitia magnam, nihil tempora nesciunt quos
+        dolore recusandae eligendi voluptatibus quia fugit, exercitationem vel delectus aliquid reprehenderit earum
+        eaque error atque vero illo maxime optio temporibus. Laborum enim ducimus saepe nam omnis, distinctio nesciunt
+        culpa, dolores ab qui deleniti.
+    </div>
+    <hr>
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error facere iusto ad blanditiis expedita fugiat
+        voluptate officia illum similique necessitatibus sit dicta distinctio quo exercitationem porro dignissimos
+        minima voluptatum consequuntur, voluptatibus odio pariatur. Suscipit eum magnam, numquam aperiam tempora
+        deleniti esse facere laborum quos ipsa. Voluptatum possimus reiciendis tempora repudiandae aut sed beatae
+        dignissimos quis facere cumque doloremque debitis, vero quia numquam voluptatem, eligendi nesciunt blanditiis
+        tenetur aliquam! Nostrum voluptatibus adipisci reiciendis a consequatur! Quisquam voluptatibus a, ullam
+        architecto explicabo vero eum accusantium ex ipsa, minima, expedita ratione iusto dolorum ab aspernatur. Quis ad
+        esse maiores repellat quisquam aut blanditiis eligendi laboriosam labore doloremque eaque totam ut asperiores
+        quo magni perspiciatis adipisci porro, velit voluptate, autem, sunt quos. Id, praesentium culpa, quo expedita
+        necessitatibus nulla iste dolor cumque ad veritatis fugiat placeat architecto in rem, vitae ducimus
+        reprehenderit aspernatur animi autem obcaecati molestiae magni officiis iure? Numquam nam quaerat ut quibusdam
+        veniam nobis est labore iste fugiat excepturi laboriosam harum praesentium, et optio maiores ex architecto fugit
+        cum aperiam? Quisquam, ipsa repellendus hic veritatis ab cumque, ad non dolorem, placeat dicta cupiditate ea id
+        delectus eaque. Officiis facilis doloribus explicabo ipsam temporibus iure id placeat. Alias vel tenetur dicta
+        aperiam sed laudantium porro voluptatem aspernatur, modi libero, nulla impedit obcaecati nostrum quos temporibus
+        omnis veniam eum? Quidem doloremque ipsam illo error deleniti. Animi odit error tempora natus atque, eligendi
+        porro? Iure quia aut corporis qui fugiat nam quidem, illo voluptatum sit quas, minus itaque suscipit eligendi
+        distinctio laborum enim deserunt! Vel optio quae rerum voluptatibus, delectus provident inventore, vero error
+        voluptas doloremque atque repellendus ipsa similique. Optio voluptatem tenetur totam laboriosam iusto cumque
+        sint enim ratione eveniet velit? Doloribus fuga ducimus saepe nihil in ullam aliquid, aperiam corrupti magnam
+        dolore ex at totam, dignissimos quis ipsum! Voluptatum non in labore libero quod dicta corrupti aspernatur amet,
+        sed cum? Mollitia incidunt, ipsam odio architecto assumenda, eligendi ducimus laudantium nihil, illo eius
+        nesciunt sunt magnam nisi sit quisquam. Consectetur, atque maxime beatae at recusandae enim nisi autem corporis
+        soluta quam! Alias in, quo quaerat magni tenetur praesentium, repudiandae, quia dolorem sed velit officiis vel.
+        Nihil amet magni eaque mollitia, minus possimus optio hic sapiente sunt magnam impedit quam quo excepturi non,
+        molestiae tempore? Asperiores officia porro dolores aliquid doloremque. Voluptate fuga obcaecati, expedita
+        laudantium odio nobis, quasi eaque minus accusantium repellat, tempora non rerum? Possimus id voluptatem non
+        fugit unde a doloremque impedit sint quibusdam similique dolore totam, deserunt optio illo quae cumque esse
+        assumenda nihil debitis perspiciatis iste quam harum tempora accusamus. Ratione ullam, distinctio minima numquam
+        dolor et perferendis, voluptatum praesentium ipsum dolores esse ut enim earum officiis illum qui blanditiis
+        nostrum voluptate. Nihil explicabo, sed unde dignissimos iusto fuga nobis dicta aliquam blanditiis consectetur
+        ipsum dolores quod perspiciatis nisi similique eaque veniam dolore perferendis expedita? Quisquam, doloremque
+        eligendi id voluptates quae numquam! Velit id eligendi ducimus ad nisi architecto debitis mollitia, aut veniam
+        consequatur facilis ex a ut! Explicabo illo, tenetur assumenda officia doloribus earum quod saepe sed illum.
+    </div>
+
+</body>
+
+</html>
